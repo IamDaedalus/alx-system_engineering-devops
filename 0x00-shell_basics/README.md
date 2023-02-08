@@ -8,3 +8,4 @@ the following numbered instruction correspond to the script starting numbers
 2. this changes the current directory to the user's home directory
 3. this lists the current directory in long format
 4. this lists every file and directory including hiddent ones hence when run starts with the . directory
+5. this lists files in long format including hidden files and folders with group IDs
