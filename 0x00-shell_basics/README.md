@@ -10,3 +10,4 @@ the following numbered instruction correspond to the script starting numbers
 4. this lists every file and directory including hiddent ones hence when run starts with the . directory
 5. this lists files in long format including hidden files and folders with group IDs
 6. this creates a directory in the /tmp directory
+7. this moves a file from one directory to the other
