@@ -12,3 +12,4 @@ the following numbered instruction correspond to the script starting numbers
 6. this creates a directory in the /tmp directory
 7. this moves a file from one directory to the other
 8. this deletes a file from a directory
+9. this deletes a directory from another directory
