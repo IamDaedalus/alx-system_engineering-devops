@@ -17,3 +17,4 @@ the following numbered instruction correspond to the script starting numbers
 11. this lists every file and directory in the current directory, the parent directory and in /boot
 12. this outputs the type of file in a directory
 13. this creates a symlink
+14. this copies files and replaces those on older versions but won't overwrite existing ones
