@@ -18,3 +18,6 @@ the following numbered instruction correspond to the script starting numbers
 12. this outputs the type of file in a directory
 13. this creates a symlink
 14. this copies files and replaces those on older versions but won't overwrite existing ones
+
+<<===== THESE SCRIPTS ARE OPTIONAL =====>>
+100. this moves every file starting with an uppercase letter to a directory
