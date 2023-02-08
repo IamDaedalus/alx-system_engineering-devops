@@ -13,3 +13,4 @@ the following numbered instruction correspond to the script starting numbers
 7. this moves a file from one directory to the other
 8. this deletes a file from a directory
 9. this deletes a directory from another directory
+10. this changes to the previous working directory
