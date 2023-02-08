@@ -21,3 +21,4 @@ the following numbered instruction correspond to the script starting numbers
 
 <<===== THESE SCRIPTS ARE OPTIONAL =====>>
 100. this moves every file starting with an uppercase letter to a directory
+101. this deletes every file ending with a ~
