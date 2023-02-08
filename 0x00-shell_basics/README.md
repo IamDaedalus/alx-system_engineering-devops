@@ -15,3 +15,4 @@ the following numbered instruction correspond to the script starting numbers
 9. this deletes a directory from another directory
 10. this changes to the previous working directory
 11. this lists every file and directory in the current directory, the parent directory and in /boot
+12. this outputs the type of file in a directory
