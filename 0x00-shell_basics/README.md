@@ -23,3 +23,4 @@ the following numbered instruction correspond to the script starting numbers
 100. this moves every file starting with an uppercase letter to a directory
 101. this deletes every file ending with a ~
 102. this creates directories recursively
+103. this lists all files and directories comma seperated and with indicators
