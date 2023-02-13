@@ -1,0 +1,1 @@
+This the shell redirections project\nfrom ALX
