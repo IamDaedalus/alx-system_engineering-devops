@@ -1,0 +1,6 @@
+.
+./hello
+./hello/world
+./hello/world/here
+./dude.js
+./.hidden
