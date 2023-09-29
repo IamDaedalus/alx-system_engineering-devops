@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# we kept running out of time so here's a script to print time
+
+hr=0
+min=0
+
+while [ $hr -lt 13 ]
+do
+	echo "Hour: $hr"
+	min=0
+	while [[ $min -lt 60 ]]
+	do
+		echo "$min"
+		((min++))
+	done
+	((hr++))
+done
