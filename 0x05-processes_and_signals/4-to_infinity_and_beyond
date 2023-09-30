@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# buzz lightyear try not to say this challenge
+
+i=0
+while [ $i -lt 1 ]
+do
+	echo "To infinity and beyond"
+	sleep 2
+done

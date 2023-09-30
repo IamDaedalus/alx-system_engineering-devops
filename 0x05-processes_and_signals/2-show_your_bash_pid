@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# this script filters out a process from a list
+# shellcheck disable=SC2009
+
+ps auxf | grep bash

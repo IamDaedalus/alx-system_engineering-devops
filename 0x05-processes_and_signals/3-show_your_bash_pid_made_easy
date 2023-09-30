@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# filters all processes and only shows bash without ps
+
+pgrep -l bash
