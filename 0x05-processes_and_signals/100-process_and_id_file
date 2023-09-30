@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# this script has daddy issues :(
+
+echo $$ >> /var/run/myscript.pid
+
+trap 'echo "I hate the kill command"' SIGTERM
+trap "rm -f /var/run/myscript.pid; exit 0" SIGTERM SIGQUIT
+trap 'echo "Y U no love me?!"' SIGINT
+
+
+i=0
+while [ $i -lt 1 ]
+do
+	echo "To infinity and beyond!!!"
+	sleep 2
+done

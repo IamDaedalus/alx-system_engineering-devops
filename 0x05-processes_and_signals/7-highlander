@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # buzz lightyear try not to say this challenge
 
-trap "I am invincible!!!" SIGTERM
+trap 'echo "I am invincible!!!"' SIGTERM
 
 i=0
 while [ $i -lt 1 ]

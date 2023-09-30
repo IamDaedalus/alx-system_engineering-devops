@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # this stops infinity using pkill
 
-sleep 8
 pkill -f "7-highlander"
