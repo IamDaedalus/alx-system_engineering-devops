@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # prints all files in the directory
 
-for _ in 1:
+cmd=$(ls)
+
+for i in $cmd
 do
-	eval "ls | cut -d "-" -f 2"
+	echo "$i" | cut -d '-' -f2
 done
