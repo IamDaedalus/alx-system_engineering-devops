@@ -1,5 +1,5 @@
 # this pp file installs a package
 package { 'flask':
- ensure   => installed,
- provider => 'pip3'
+  ensure   => '2.1.0',
+  provider => 'pip3'
 }
