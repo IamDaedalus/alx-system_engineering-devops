@@ -4,7 +4,7 @@ package { 'flask':
   provider => 'pip3'
 }
 
-package { 'werzeut':
+package { 'werkzeug':
   ensure   => '2.1.1',
   provider => 'pip3'
 }
