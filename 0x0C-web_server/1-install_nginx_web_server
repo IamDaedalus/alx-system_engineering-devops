@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# ths script configs and installs nginx
+
+apt-get -y update
+apt-get -y install nginx
+ufw allow 80
+
+# create html file
+echo "<html><body><h1>Hello World!</h1></body></html>" > /var/www/html/index.html
+
+# start the nginx
+service nginx start
