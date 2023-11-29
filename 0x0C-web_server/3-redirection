@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# ths script configs and installs nginx then redirects to a new site
+
+apt-get -y update
+apt-get -y install nginx
+ufw allow 80
+
+# create html file
+echo "Hello World!" > /var/www/html/index.html
+
+# permanent move something
+str="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.google.com permanent;"
+sed -i "s/server_name _;/$str/" /etc/nginx/sites-enabled/default
+
+# 404 error setup
+echo "Ceci n'est pas une page" > /var/www/html/404.html
+new_str="listen 80 default_server;\n\terror_page 404 \/404.html;\n\tlocation = \/404.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}"
+sed -i "s/listen 80 default_server;/$new_str/" /etc/nginx/sites-enabled/default
+
+# start the nginx
+service nginx restart
