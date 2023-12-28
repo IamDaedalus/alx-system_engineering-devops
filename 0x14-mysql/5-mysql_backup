@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 # file to create a back up of all database
 mysqldump -uroot -p "$1" --all-databases > backup.sql
 # https://tecadmin.net/get-current-date-and-time-in-bash/
