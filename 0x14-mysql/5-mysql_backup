@@ -1,0 +1,7 @@
+#!/bin/env bash
+#
+mysqldump -uroot -p "$1" --all-databases > backup.sql
+# https://tecadmin.net/get-current-date-and-time-in-bash/
+# also tar CompressZeFile lol
+tar -czf "$(data +%d-%m-%Y)".tar.gz backup.sql
+
