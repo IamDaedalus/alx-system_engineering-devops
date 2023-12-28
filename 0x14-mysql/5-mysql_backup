@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # file to create a back up of all database
-mysqldump -uroot -p "$1" --all-databases > backup.sql
+mysqldump -uroot -p"$1" --all-databases > backup.sql
 # https://tecadmin.net/get-current-date-and-time-in-bash/
 # also tar CompressZeFile lol
-tar -czf "$(data +%d-%m-%Y)".tar.gz backup.sql
+tar -czf "$(date +%d-%m-%Y)".tar.gz backup.sql
 
