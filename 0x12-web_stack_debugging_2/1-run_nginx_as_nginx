@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# make nginx the user running nginx
 
 # Stop the Nginx service if it's running
 service nginx stop
