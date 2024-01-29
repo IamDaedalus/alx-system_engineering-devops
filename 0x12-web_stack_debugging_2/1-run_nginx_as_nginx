@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# Stop the Nginx service if it's running
+service nginx stop
+
+# Backup the default Nginx configuration
+cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
+
+# Replace the user directive in nginx.conf to run as nginx user
+sed -i 's/user\s*[^;]*;/user nginx;/g' /etc/nginx/nginx.conf
+
+# Update the default site configuration to listen on all active IPs on port 8080
+cat > /etc/nginx/sites-available/default <<EOF
+server {
+    listen 8080 default_server;
+    listen [::]:8080 default_server;
+    server_name _;
+
+    root /var/www/html;
+    index index.html index.htm;
+
+    location / {
+        try_files \$uri \$uri/ =404;
+    }
+}
+EOF
+
+# Restart Nginx to apply the changes
+service nginx restart
